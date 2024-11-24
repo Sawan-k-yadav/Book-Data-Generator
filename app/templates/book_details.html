@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2>Book Details</h2>
+    <dl>
+        <dt>Title:</dt>
+        <dd>{{ book.title }}</dd>
+        <dt>Author:</dt>
+        <dd>{{ book.author }}</dd>
+        <dt>Genre:</dt>
+        <dd>{{ book.genre }}</dd>
+        <dt>Language:</dt>
+        <dd>{{ book.language }}</dd>
+        <dt>Subject:</dt>
+        <dd>{{ book.subject }}</dd>
+        <dt>Bookshelf:</dt>
+        <dd>{{ book.bookshelf }}</dd>
+        <dt>Links:</dt>
+        <dd>
+            <ul>
+                {% for link in book.links %}
+                    <li>
+                        <a href="{{ link.link }}">{{ link.mime_type }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </dd>
+    </dl>
+{% endblock %}

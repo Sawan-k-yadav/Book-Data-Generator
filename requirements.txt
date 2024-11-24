@@ -1,0 +1,6 @@
+flask
+Flask-SQLAlchemy
+marshmallow==3.10.0
+mysqlclient==2.0.3
+pymysql
+cryptography
