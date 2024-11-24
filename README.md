@@ -7,11 +7,11 @@
     git clone https://github.com/Sawan-k-yadav/Book-Data-Generator.git
 ```
 
-1. Create virtual environment using conda or python --
+2. Create virtual environment using conda or python --
 ``` 
     conda create -p dbgen python==3.7 -y
 ```
-2. Activate virtual environment --
+3. Activate virtual environment --
 ```
     conda activate dbgen/
     or
